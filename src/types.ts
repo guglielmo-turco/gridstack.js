@@ -71,7 +71,7 @@ export interface GridItemHTMLElement extends HTMLElement {
   _gridstackNodeOrig?: GridStackNode;
 }
 
-export type GridComponentElement = () => void;
+export type GridComponentElement = any; // eslint-disable-line
 
 export type GridStackElement = string | HTMLElement | GridItemHTMLElement | GridComponentElement;
 
